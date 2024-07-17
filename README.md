@@ -6,3 +6,13 @@
 git clone https://github.com/John-Smiths/vim-clipping-plate.git
 bash setup.sh
 ```
+# 使用教程
+修改 Vim 配置文件 自定义上传服务器和命令
+```
+exec "!scp % root@server:/root/% && ssh root@server 'python3 %'"
+```
+
+修改 Vim 配置文件 自定义上传服务器和命令与执行目录
+```
+exec "!scp % root@server:/root/temp/% && ssh root@server 'cd /root/temp/ && python3 %'"
+```
