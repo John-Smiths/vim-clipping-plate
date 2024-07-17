@@ -1,5 +1,5 @@
 # vim-clipping-plate
-解决服务器Vim 无法进行剪切的调试方法 / Solve the server Vim can not be cut debugging method
+解决服务器 Vim 无法进行剪切的调试方法 / Solve the server Vim can not be cut debugging method
 
 # 安装方法
 ```
