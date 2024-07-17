@@ -1,0 +1,10 @@
+map <F6> :call CompileRunGccR()<CR>
+func! CompileRunGccR()
+        exec "w"
+        if &filetype == 'sh'
+                exec "!bash %"
+        elseif &filetype == 'python'
+                exec "!scp % rpi:/root/% && ssh rpi 'python3 %'"
+        endif
+		call feedkeys("\<CR>")
+endfun
